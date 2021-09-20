@@ -5,11 +5,29 @@
       <map>
         <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/drawable/splash.xml" value="0.25" />
         <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_comidas.xml" value="0.3307291666666667" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_home.xml" value="0.42916666666666664" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_home2.xml" value="0.32708333333333334" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_login.xml" value="0.42916666666666664" />
         <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_receta.xml" value="0.3307291666666667" />
         <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_recetas.xml" value="0.3307291666666667" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/app_bar.xml" value="0.42916666666666664" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/asdasd.xml" value="0.3307291666666667" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/content_register.xml" value="0.3307291666666667" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_cargar_receta.xml" value="0.32708333333333334" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_home.xml" value="0.32708333333333334" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_mis_recetas.xml" value="0.31666666666666665" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_perfil.xml" value="0.32708333333333334" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_recetas_rapidas.xml" value="0.32708333333333334" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_recomendacion_dieta.xml" value="0.40572916666666664" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_registro.xml" value="0.3307291666666667" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_second.xml" value="0.31666666666666665" />
         <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/fragment_splash.xml" value="0.3307291666666667" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/header_layout.xml" value="0.33" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/home_contentenido.xml" value="0.32708333333333334" />
         <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/layout/item_comida.xml" value="0.3307291666666667" />
+        <entry key="..\:/EjerciciosAlkemyAndroid/QueComer/app/src/main/res/menu/menu.xml" value="0.3307291666666667" />
       </map>
     </option>
   </component>

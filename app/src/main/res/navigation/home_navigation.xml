@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@+id/nav_home_fragment">
+
+    <fragment
+        android:id="@+id/nav_home_fragment"
+        android:name="com.example.quecomer.ui.inicio.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_perfil_fragment"
+        android:name="com.example.quecomer.ui.perfil.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_mis_recetas_fragment"
+        android:name="com.example.quecomer.ui.mis_recetas.MisRecetasFragment"
+        android:label="Mis recetas"
+        tools:layout="@layout/fragment_mis_recetas" />
+    <fragment
+        android:id="@+id/nav_cargar_recetas_fragment"
+        android:name="com.example.quecomer.ui.cargar_recetas.CargarRecetaFragment"
+        android:label="Carga de Receta"
+        tools:layout="@layout/fragment_cargar_receta"/>
+    <fragment
+        android:id="@+id/nav_recetas_rapidas_fragment"
+        android:name="com.example.quecomer.ui.recetas_rapidas.RecetasRapidasFragment"
+        android:label="Recetas rapidas"
+        tools:layout="@layout/fragment_recetas_rapidas"/>
+    <fragment
+        android:id="@+id/nav_recomendacion_dieta"
+        android:name="com.example.quecomer.ui.dieta.RecomendacionDietaFragment"
+        android:label="Dietas"
+        tools:layout="@layout/fragment_recomendacion_dieta"/>
+    <fragment
+        android:id="@+id/nav_pocos_ingredientes"
+        android:name="com.example.quecomer.ui.pocos_ingredientes.PocosIngredientesFragment"
+        android:label="Pocos Ingredientes"
+        tools:layout="@layout/fragment_pocos_ingredientes"/>
+    <fragment
+        android:id="@+id/nav_zona_sin_carnes"
+        android:name="com.example.quecomer.ui.sin_carnes.SinCarnesFragment"
+        android:label="Zona Carnes"
+        tools:layout="@layout/fragment_sin_carnes"/>
+
+</navigation>
