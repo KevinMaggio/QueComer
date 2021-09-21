@@ -1,7 +1,7 @@
 package com.example.quecomer.di
 
-import com.example.quecomer.data.RecetaService
-import com.example.quecomer.data.repository.RecetasRepository
+import com.example.quecomer.data.RecipeService
+import com.example.quecomer.data.repository.RecipesRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -34,10 +34,10 @@ class DataModule {
     //instance de recetaService (Interface)
     @Provides
     fun provideRegisterService(@ApiQueComer retrofit: Retrofit) =
-        retrofit.create(RecetaService::class.java)
+        retrofit.create(RecipeService::class.java)
 
     @Provides
-    fun provideRecetasRepository(recetaService: RecetaService):RecetasRepository{
-        return RecetasRepository(recetaService)
+    fun provideRecetasRepository(recipeService: RecipeService):RecipesRepository{
+        return RecipesRepository(recipeService)
     }
 }

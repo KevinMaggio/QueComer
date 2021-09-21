@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeActivity">
+    tools:context=".ui.diet.RecomendacionDietaFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="ACa El Contenido DE HOME"
-        android:gravity="center"/>
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>

@@ -1,8 +1,3 @@
-
-
-import com.example.quecomer.data.model.RecetaResponse
-import retrofit2.Response
-import java.io.Serializable
 /*
 abstract class BaseDataSource {
 

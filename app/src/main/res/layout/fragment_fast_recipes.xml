@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeActivity">
+    tools:context=".ui.recipe_fast.RecetasRapidasFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="ACa El Contenido DE HOME"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="aca recetas rapidas"
+        android:textSize="30sp"/>
 
 </FrameLayout>
