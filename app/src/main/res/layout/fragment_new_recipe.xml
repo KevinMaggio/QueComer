@@ -1,15 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.update_recipe.CargarRecetaFragment">
+    android:background="#ccffff"
+    tools:context=".ui.new_recipe.NewRecipeFragment">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="aca la carga de recetas"
-        android:textSize="30sp"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="Carga de recetas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp" />
 
-</FrameLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/it_title"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:shadowColor="@color/black"
+            android:layout_height="wrap_content"
+            android:hint="ingrese el titulo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_ingredientes"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="ingredientes" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_ingredientes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="pasos a seguir"
+            android:inputType="textMultiLine"
+            android:background="@color/white"
+            android:minLines="10" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_post"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:text="Publicar"
+        android:textStyle="bold"
+        android:backgroundTint="#00ff00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:backgroundTint="#ff0000"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

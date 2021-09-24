@@ -23,12 +23,12 @@
         tools:layout="@layout/fragment_my_recipe" />
     <fragment
         android:id="@+id/nav_cargar_recetas_fragment"
-        android:name="com.example.quecomer.ui.update_recipe.CargarRecetaFragment"
+        android:name="com.example.quecomer.ui.new_recipe.NewRecipeFragment"
         android:label="Carga de Receta"
         tools:layout="@layout/fragment_new_recipe"/>
     <fragment
         android:id="@+id/nav_recetas_rapidas_fragment"
-        android:name="com.example.quecomer.ui.recipe_fast.RecetasRapidasFragment"
+        android:name="com.example.quecomer.ui.recipe_fast.RecipeFastFragment"
         android:label="Recetas rapidas"
         tools:layout="@layout/fragment_fast_recipes"/>
     <fragment

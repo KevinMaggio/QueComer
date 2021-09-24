@@ -1,22 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.register.RegisterActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="aca el registro"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.register.RegisterActivity">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registro de usuario"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_user"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/it_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nombre" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tf_user">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/it_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:errorTextColor="#ff0000"
+            app:errorEnabled="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tf_username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/it_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tf_email"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/it_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_confirm_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:errorTextColor="#ff0000"
+            app:errorEnabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/tf_password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/it_confirme_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar Contraseña" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_history"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tf_confirm_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="Aprendiendo de a poco..."
+                android:hint="Historia"
+                android:inputType="textMultiLine"
+                android:minLines="6" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Registrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@+id/tf_history" />
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@+id/tf_history" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

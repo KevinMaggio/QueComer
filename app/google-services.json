@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070906347090",
+    "project_id": "que-comer-c29e1",
+    "storage_bucket": "que-comer-c29e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070906347090:android:6af35cd1edca4584be598b",
+        "android_client_info": {
+          "package_name": "com.example.quecomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070906347090-ma0v42v9m0im9dihb8he83d5qijtrovg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBunn0cJZ03N8Vo_12yge-d5vNpbMxviUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070906347090-ma0v42v9m0im9dihb8he83d5qijtrovg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

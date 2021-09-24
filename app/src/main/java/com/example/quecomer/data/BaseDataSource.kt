@@ -1,14 +1,18 @@
-/*
-abstract class BaseDataSource {
+import com.example.quecomer.data.model.ApiResponse
+import retrofit2.Response
+import java.io.Serializable
 
-    protected suspend fun <T> getResult(call: suspend () -> Response<RecetaResponse>): Resource<T> {
+
+abstract class BaseDataSource{
+
+    protected suspend fun <T> getResult(call: suspend () -> Response<ApiResponse<T>>): Resource<T> {
         try {
             val response = call()
 //            if(response.isSuccessful) {
 //                val body = response.body()?.data
 //                if(body != null) return Resource.success(body)
 //            }
-            val body = response.body()?.imagen
+            val body = response.body()?.data
             return Resource.success(body)
             //return Resource.error("${response.code()}: ${response.message()}")
         } catch (e: Exception) {
@@ -56,5 +60,8 @@ data class Resource<out T>(val status: Status, val data: T?, val message: String
     }
 
     fun isSuccessful() = status == Status.SUCCESS
+
+    fun isError() = status == Status.ERROR
+
+    fun isLoading() = status == Status.LOADING
 }
-*/

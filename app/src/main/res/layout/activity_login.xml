@@ -15,7 +15,7 @@
         app:layout_constraintGuide_percent="0.6"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/tv_ingrediente"
+        android:id="@+id/it_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -41,7 +41,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_ingrediente" />
+        app:layout_constraintTop_toBottomOf="@+id/it_user" />
 
     <Button
         android:id="@+id/bt_iniciar"
@@ -53,21 +53,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/it_pass" />
 
-    <Button
+    <ImageButton
         android:id="@+id/login_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
+        android:background="@drawable/ic_gmail"
         android:text="@string/login_bt_google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/bt_facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
         android:text="@string/login_bt_facebook"
+        android:background="@drawable/ic_facebook"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
