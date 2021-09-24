@@ -1,3 +1,5 @@
+package com.example.quecomer.data
+
 import com.example.quecomer.data.model.ApiResponse
 import retrofit2.Response
 import java.io.Serializable
@@ -10,11 +12,11 @@ abstract class BaseDataSource{
             val response = call()
 //            if(response.isSuccessful) {
 //                val body = response.body()?.data
-//                if(body != null) return Resource.success(body)
+//                if(body != null) return com.example.quecomer.data.Resource.success(body)
 //            }
             val body = response.body()?.data
             return Resource.success(body)
-            //return Resource.error("${response.code()}: ${response.message()}")
+            //return com.example.quecomer.data.Resource.error("${response.code()}: ${response.message()}")
         } catch (e: Exception) {
             return Resource.error(e.message ?: "Generic error")
         }

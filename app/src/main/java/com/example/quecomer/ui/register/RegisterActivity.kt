@@ -142,12 +142,12 @@ class RegisterActivity : AppCompatActivity() {
 
         registerViewModel.registerResponse.observe(this, Observer {
             when (it.status) {
-                Resource.Status.LOADING -> {
+                com.example.quecomer.data.Resource.Status.LOADING -> {
                 }
-                Resource.Status.SUCCESS -> {
+                com.example.quecomer.data.Resource.Status.SUCCESS -> {
                     Toast.makeText(this, "User created", Toast.LENGTH_LONG).show()
                 }
-                Resource.Status.ERROR -> {
+                com.example.quecomer.data.Resource.Status.ERROR -> {
 
                     binding.itEmail.error = " "
                     binding.itPassword.error = " "
