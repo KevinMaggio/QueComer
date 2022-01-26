@@ -6,9 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.quecomer.R
 import com.example.quecomer.databinding.FragmentNewRecipeBinding
-import com.example.quecomer.ui.login.LoginActivity
+import com.example.quecomer.ui.home.HomeActivity
 
 
 class NewRecipeFragment : Fragment() {
@@ -17,14 +16,13 @@ class NewRecipeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View {
         binding= FragmentNewRecipeBinding.inflate(inflater, container, false)
 
 
 
         binding.btCancel.setOnClickListener {
-            startActivity(Intent(context,LoginActivity::class.java))
+            startActivity(Intent(context, HomeActivity::class.java))
         }
         return binding.root
     }
