@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1070906347090",
-    "project_id": "que-comer-c29e1",
-    "storage_bucket": "que-comer-c29e1.appspot.com"
+    "project_number": "901117008744",
+    "project_id": "quecomer-68ccb",
+    "storage_bucket": "quecomer-68ccb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1070906347090:android:6af35cd1edca4584be598b",
+        "mobilesdk_app_id": "1:901117008744:android:cae648847c443b45a3d4dd",
         "android_client_info": {
           "package_name": "com.example.quecomer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1070906347090-ma0v42v9m0im9dihb8he83d5qijtrovg.apps.googleusercontent.com",
+          "client_id": "901117008744-nabsbvpr7a9g69f5v8aligopi09of27l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBunn0cJZ03N8Vo_12yge-d5vNpbMxviUI"
+          "current_key": "AIzaSyDpXgIHcDKqx4TU6JQ1LefcK1pOhbGKc4A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1070906347090-ma0v42v9m0im9dihb8he83d5qijtrovg.apps.googleusercontent.com",
+              "client_id": "901117008744-nabsbvpr7a9g69f5v8aligopi09of27l.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
