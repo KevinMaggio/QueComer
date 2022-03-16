@@ -101,6 +101,13 @@ android {
         // Also declare the dependency for the Google Play services library and specify its version
         implementation 'com.google.android.gms:play-services-auth:20.0.1'
 
+        //fireStore
+        implementation 'com.google.firebase:firebase-firestore-ktx:24.0.2'
+
     }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
 

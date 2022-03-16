@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.quecomer.databinding.ActivityMainBinding
+import com.example.quecomer.utils.Dates
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -50,7 +51,9 @@ class MainActivity : AppCompatActivity() {
                     val credential = GoogleAuthProvider.getCredential(acount.idToken,null)
                     FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
                         if (it.isSuccessful){
-                            Toast.makeText(this, acount.givenName, Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, it.result.user?.email.toString(), Toast.LENGTH_LONG).show()
+
+                            Dates.email = it.result.user?.email.toString()
                             startActivity(Intent(this,HomeActivity::class.java))
                         }else{
                             Toast.makeText(this, acount.givenName, Toast.LENGTH_LONG).show()
